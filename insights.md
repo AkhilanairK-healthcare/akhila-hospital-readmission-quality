@@ -26,7 +26,14 @@
    ERR at a small hospital (for example Fairfield Medical
    Center, Hip/Knee Replacement 1.6297, with its counts
    hidden) is a flag to check, not a final verdict.
+7. The worst hospital differs by state: a window function
+   ranks Heart Failure hospitals inside each state (q11,
+   153 rows). The worst in Alaska is Central Peninsula
+   General Hospital at 1.2271, while even the worst in
+   Wyoming (SageWest Health Care, 0.9964) sits below the
+   benchmark - so "worst in state" does not always mean
+   above the benchmark.
 Method note: every figure above is reproduced by the queries in
-sql/ (q01-q10) and cross-checked in notebooks/02. Missing ERRs
+sql/ (q01-q11) and cross-checked in notebooks/02. Missing ERRs
 were never turned into zero; 222 rows (1.2%) have no hospital
 file match and show blank hospital info in the dashboard.

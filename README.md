@@ -47,6 +47,9 @@ Join key: Facility ID. Full notes: data_notes/data_dictionary.md
   Hip/Knee Replacement 1.6297 (its discharge and
   readmission counts are hidden - "Too Few to Report")
 - Best Pneumonia ERR: Augusta Health, VA 0.7967
+- Window function (q11): top 3 Heart Failure hospitals
+  in each state, 153 rows. Worst: Central Peninsula
+  General Hospital, AK 1.2271
 
 ## Dashboard (4 pages)
 1 National Overview
@@ -67,7 +70,7 @@ Join key: Facility ID. Full notes: data_notes/data_dictionary.md
    a Drive folder.
 2. Run notebooks/01_data_cleaning.ipynb to build
    readmissions.db (fact_readmissions + dim_hospital).
-3. Run the queries in sql/ in order q01-q10.
+3. Run the queries in sql/ in order q01-q11.
 4. Run notebooks/02_exploratory_analysis.ipynb;
    compare with the SQL results.
 5. Open the Power BI model (fact_readmissions joined
